@@ -1,0 +1,34 @@
+# Never publish local or operational secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.age
+*.sops.*
+id_rsa*
+id_ed25519*
+*credential*
+*secret*
+*token*
+auth.json
+
+# Private operational material
+private/
+runbook/
+backups/
+*.backup
+*.bak
+*.sql
+*.sqlite
+*.sqlite3
+
+# Infrastructure state
+*.tfstate
+*.tfstate.*
+
+# Editor and operating-system files
+.DS_Store
+*.swp
+*~
